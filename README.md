@@ -1,7 +1,7 @@
 # MacroSizeof
 #if sizeof(int) == 4 //.. doesn't work as expected since sizeof(int) is not a macro. This header file defines macros SIZEOF() that do allow such macro conditions to work as expected for fundamental (i.e. primitive) C and C++ types.
 
-Since sizeof() also incorporates the size (in chars) of padding, these macros will work correctly with many, but NOT all, architectures and compilers. Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCout<int>(); to verify the correctness of these macros for use with your compiler and for your target architecture.
+Should work correctly with many, although possibly NOT all, architectures and compilers. Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCout<int>(); to verify the correctness of these macros for use with your compiler and for your target architecture.
 
 Usage example:
 
