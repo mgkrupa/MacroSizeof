@@ -3,6 +3,9 @@
  *
  *  Created on: May 26, 2017
  *      Author: Matthew Gregory Krupa
+ * Should work correctly with many, although possibly NOT all, architectures and compilers. 
+ * Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCout<int>(); to verify the correctness 
+ *  of these macros for use with your compiler and for your target architecture.
  */
 
 #ifndef SIZEOF_DEFINITIONS_H_
