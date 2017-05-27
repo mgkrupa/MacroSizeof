@@ -3,11 +3,6 @@
  *
  *  Created on: May 26, 2017
  *      Author: Matthew Gregory Krupa
- *
- * Since sizeof() also incorporates the size (in chars) of padding, 
- *  these macros will work correctly with many, but NOT all, architectures and compilers.
- * Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCoutint>(); to verify
- *  the correctness of these macros for use with your compiler and for your target architecture.
  */
 
 #ifndef SIZEOF_DEFINITIONS_H_
