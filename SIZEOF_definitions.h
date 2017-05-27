@@ -3,6 +3,8 @@
  *
  *  Created on: May 26, 2017
  *      Author: Matthew Gregory Krupa
+ *
+ * These macros will work correctly on many, but NOT all, architectures.
  */
 
 #ifndef SIZEOF_DEFINITIONS_H_
