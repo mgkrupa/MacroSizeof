@@ -5,7 +5,9 @@
  *      Author: Matthew Gregory Krupa
  *
  * Since sizeof() also incorporates the size (in chars) of padding, 
- * these macros will work correctly with many, but NOT all, architectures and compilers.
+ *  these macros will work correctly with many, but NOT all, architectures and compilers.
+ * Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCoutint>(); to verify
+ *  the correctness of these macros for use with your compiler and for your target architecture.
  */
 
 #ifndef SIZEOF_DEFINITIONS_H_
@@ -394,7 +396,7 @@ int main(int argc, char** argv) {
 }
 */
 
-/*
+//Defined as a template soley to prevent any unnecessary inclusion into any object file.
 template<class T> void PrintSizesToCout() {
 #define STR_E_NE(a, b) (static_cast<int>(a) == static_cast<int>(b) ? " \t==\t  " : " \t!=\t ")
 #define PRINT_SIZEOF_RESULTS_FOR_TYPE1(a) { \
@@ -448,7 +450,7 @@ template<class T> void PrintSizesToCout() {
 #undef PRINT_SIZEOF_RESULTS_FOR_TYPE_ORIGINAL_SIGNED_AND_UNSIGNED3
 }
 
-
+//Defined as a template soley to prevent any unnecessary inclusion into any object file.
 #include <cassert>
 template<class T> void VerifySIZEOFMacros() {
   assert(sizeof(float) == SIZEOF(float)); assert(sizeof(double) == SIZEOF(double));                  assert(sizeof(long double)  == SIZEOF(long, double));
@@ -462,7 +464,7 @@ template<class T> void VerifySIZEOFMacros() {
   assert(sizeof(long long int) == SIZEOF(long, long, int)); assert(sizeof(unsigned long long int) == SIZEOF(unsigned, long, long, int)); assert(sizeof(signed long long int) == SIZEOF(signed, long, long, int));
   return ;
 }
-*/
+
 
 
 #endif /* SIZEOF_DEFINITIONS_H_ */
