@@ -8,6 +8,7 @@
  * Should work correctly with many, although possibly NOT all, architectures and compilers. 
  * Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCout<int>(); to verify the correctness 
  *  of these macros for use with your compiler and for your target architecture.
+ * The macro SIZEOF_BIT() equals SIZEOF() * CHAR_BIT, which is the number of bits in the type.
  */
 
 #ifndef SIZEOF_DEFINITIONS_H_
