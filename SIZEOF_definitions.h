@@ -4,7 +4,8 @@
  *  Created on: May 26, 2017
  *      Author: Matthew Gregory Krupa
  *
- * These macros will work correctly on many, but NOT all, architectures.
+ * Since sizeof() also incorporates the size (in chars) of padding, 
+ * these macros will work correctly with many, but NOT all, architectures and compilers.
  */
 
 #ifndef SIZEOF_DEFINITIONS_H_
