@@ -6,6 +6,7 @@ Since sizeof() also incorporates the size (in chars) of padding, these macros wi
 Usage example:
 
 #include <iostream>
+
 #include "SIZEOF_definitions.h"
 
 #if SIZEOF(unsigned, int) == 4
@@ -25,6 +26,7 @@ int main(int argc, char** argv) {
          << SIZEOF(int)                 << " chars, #bits = " << SIZEOF_BIT(int)                 << '\n';
   
   std::cout << func() << std::endl;
+  
   return 0;
   
 }
