@@ -2,7 +2,7 @@
  * SIZEOF_definitions.h
  *
  *  Created on: May 26, 2017
- *      Author: diagoras
+ *      Author: Matthew Gregory Krupa
  */
 
 #ifndef SIZEOF_DEFINITIONS_H_
