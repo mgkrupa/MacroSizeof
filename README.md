@@ -1,5 +1,5 @@
 # MacroSizeof
-#if sizeof(int) == 4 //.. doesn't work as expected since sizeof(int) is not a macro. This header file defines macros SIZEOF() that do allow such macro conditions to work as expected for fundamental (i.e. primitive) C and C++ types.
+#if sizeof(int) == 4 //.. doesn't work as expected since sizeof(int) is not a macro. This header file defines macros SIZEOF() and SIZEOF_BIT() that do allow such macro conditions to work as expected for fundamental (i.e. primitive) C and C++ types. The macro SIZEOF_BIT() equals SIZEOF() * CHAR_BIT, which is the number of bits in the type.
 
 Macros defined only for fundamental (i.e. primitive) types. Should work correctly with many, although possibly NOT all, architectures and compilers. Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCout<int>(); to verify the correctness of these macros for use with your compiler and for your target architecture.
 
