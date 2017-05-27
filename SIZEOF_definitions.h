@@ -15,7 +15,6 @@
 
 //INSTEAD JUST USE http://www.boost.org/doc/libs/1_63_0/boost/math/cstdfloat/cstdfloat_types.hpp
 
-
 /* NOTE:
  * all short     types (including signed and unsigned) are at least 16 bits wide.
  * all int       types (including signed and unsigned) are at least 16 bits wide.
@@ -100,9 +99,6 @@
 #undef TYPE_RANGE
 #define SIZEOF_SIG_ATOMIC (SIG_ATOMIC_BIT/CHAR_BIT)
 
-
-
-
 #define TYPE_RANGE SCHAR_MAX - SCHAR_MIN
 #if TYPE_RANGE == 0xFF
 #define SCHAR_BIT 8
@@ -165,14 +161,6 @@
 #endif
 #undef TYPE_RANGE
 #define SIZEOF_LLONG (LLONG_BIT/CHAR_BIT)
-
-
-
-
-
-
-
-
 
 #define TYPE_RANGE UCHAR_MAX
 #if TYPE_RANGE == 0xFF
@@ -237,12 +225,6 @@
 #undef TYPE_RANGE
 #define SIZEOF_ULLONG (ULLONG_BIT/CHAR_BIT)
 
-
-
-
-
-
-
 #include <cfloat>
 #define TYPE_RANGE FLT_MAX_EXP
 #if TYPE_RANGE == 128
@@ -266,7 +248,6 @@
 #undef TYPE_RANGE
 #define SIZEOF_DBL (DBL_BIT/CHAR_BIT)
 
-
 #define TYPE_RANGE LDBL_MAX_EXP
 #if TYPE_RANGE == 128
 #define LDBL_BIT 32
@@ -277,18 +258,6 @@
 #endif
 #undef TYPE_RANGE
 #define SIZEOF_LDBL (LDBL_BIT/CHAR_BIT)
-/*
-#define TYPE_RANGE LDBL_MAX_EXP
-#if TYPE_RANGE == 128
-#define LDBL_BIT 32
-#elif TYPE_RANGE == 1024
-#define LDBL_BIT 64
-#elif TYPE_RANGE == 16384
-#define LDBL_BIT 128
-#endif
-#undef TYPE_RANGE
-#define SIZEOF_LDBL (LDBL_BIT/CHAR_BIT)
-*/
 
 #define SIZEOF_CHAR                     1
 
@@ -329,8 +298,6 @@
 #define SIZEOF_float                    SIZEOF_FLT
 #define SIZEOF_double                   SIZEOF_DBL
 #define SIZEOF_longdouble               SIZEOF_LDBL
-
-
 
 #define SIZEOFBITS_char                 CHAR_BIT
 
@@ -426,7 +393,6 @@ template<class T> void PrintSizesToCout() {
 #define PRINT_SIZEOF_RESULTS_FOR_TYPE_ORIGINAL_SIGNED_AND_UNSIGNED3(a, b, c) \
   PRINT_SIZEOF_RESULTS_FOR_TYPE3(a, b, c) PRINT_SIZEOF_RESULTS_FOR_TYPE4(signed, a, b, c) PRINT_SIZEOF_RESULTS_FOR_TYPE4(unsigned, a, b, c) std::cout << '\n';
 
-
   PRINT_SIZEOF_RESULTS_FOR_TYPE_ORIGINAL_SIGNED_AND_UNSIGNED1(char)
   PRINT_SIZEOF_RESULTS_FOR_TYPE_ORIGINAL_SIGNED_AND_UNSIGNED1(short)
   PRINT_SIZEOF_RESULTS_FOR_TYPE_ORIGINAL_SIGNED_AND_UNSIGNED2(short, int)
@@ -464,7 +430,5 @@ template<class T> void VerifySIZEOFMacros() {
   assert(sizeof(long long int) == SIZEOF(long, long, int)); assert(sizeof(unsigned long long int) == SIZEOF(unsigned, long, long, int)); assert(sizeof(signed long long int) == SIZEOF(signed, long, long, int));
   return ;
 }
-
-
 
 #endif /* SIZEOF_DEFINITIONS_H_ */
