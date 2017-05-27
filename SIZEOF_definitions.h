@@ -3,6 +3,8 @@
  *
  *  Created on: May 26, 2017
  *      Author: Matthew Gregory Krupa
+ *
+ * Macros defined only for fundamental (i.e. primitive) types.
  * Should work correctly with many, although possibly NOT all, architectures and compilers. 
  * Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCout<int>(); to verify the correctness 
  *  of these macros for use with your compiler and for your target architecture.
