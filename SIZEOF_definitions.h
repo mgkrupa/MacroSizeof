@@ -9,12 +9,12 @@
  * Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCout<int>(); to verify the correctness 
  *  of these macros for use with your compiler and for your target architecture.
  * The macro SIZEOF_BIT() equals SIZEOF() * CHAR_BIT, which is the number of bits in the type.
+ * For floating point types, you may also want to consider using 
+ *  http://www.boost.org/doc/libs/1_63_0/boost/math/cstdfloat/cstdfloat_types.hpp
  */
 
 #ifndef SIZEOF_DEFINITIONS_H_
 #define SIZEOF_DEFINITIONS_H_
-
-//INSTEAD JUST USE http://www.boost.org/doc/libs/1_63_0/boost/math/cstdfloat/cstdfloat_types.hpp
 
 /* NOTE:
  * all short     types (including signed and unsigned) are at least 16 bits wide.
