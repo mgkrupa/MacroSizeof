@@ -427,6 +427,16 @@ template<class T> void VerifySIZEOFMacros() {
   assert(sizeof(short int) == SIZEOF(short, int)); assert(sizeof(unsigned short int) == SIZEOF(unsigned, short, int)); assert(sizeof(signed short int) == SIZEOF(signed, short, int));
   assert(sizeof(long int)  == SIZEOF(long, int));  assert(sizeof(unsigned long int)  == SIZEOF(unsigned, long, int));  assert(sizeof(signed long int)  == SIZEOF(signed, long, int));
   assert(sizeof(long long int) == SIZEOF(long, long, int)); assert(sizeof(unsigned long long int) == SIZEOF(unsigned, long, long, int)); assert(sizeof(signed long long int) == SIZEOF(signed, long, long, int));
+  
+  assert(CHAR_BIT*sizeof(float) == SIZEOF_BIT(float)); assert(CHAR_BIT*sizeof(double) == SIZEOF_BIT(double));                  assert(CHAR_BIT*sizeof(long double)  == SIZEOF_BIT(long, double));
+  assert(CHAR_BIT*sizeof(char)  == SIZEOF_BIT(char));  assert(CHAR_BIT*sizeof(unsigned char)  == SIZEOF_BIT(unsigned, char));  assert(CHAR_BIT*sizeof(signed char)  == SIZEOF_BIT(signed, char));
+  assert(CHAR_BIT*sizeof(short) == SIZEOF_BIT(short)); assert(CHAR_BIT*sizeof(unsigned short) == SIZEOF_BIT(unsigned, short)); assert(CHAR_BIT*sizeof(signed short) == SIZEOF_BIT(signed, short));
+  assert(CHAR_BIT*sizeof(int)   == SIZEOF_BIT(int));   assert(CHAR_BIT*sizeof(unsigned int)   == SIZEOF_BIT(unsigned, int));   assert(CHAR_BIT*sizeof(signed int)   == SIZEOF_BIT(signed, int));
+  assert(CHAR_BIT*sizeof(long)  == SIZEOF_BIT(long));  assert(CHAR_BIT*sizeof(unsigned long)  == SIZEOF_BIT(unsigned, long));  assert(CHAR_BIT*sizeof(signed long)  == SIZEOF_BIT(signed, long));
+  assert(CHAR_BIT*sizeof(long long) == SIZEOF_BIT(long, long)); assert(CHAR_BIT*sizeof(unsigned long long) == SIZEOF_BIT(unsigned, long, long)); assert(CHAR_BIT*sizeof(signed long long) == SIZEOF_BIT(signed, long, long));
+  assert(CHAR_BIT*sizeof(short int) == SIZEOF_BIT(short, int)); assert(CHAR_BIT*sizeof(unsigned short int) == SIZEOF_BIT(unsigned, short, int)); assert(CHAR_BIT*sizeof(signed short int) == SIZEOF_BIT(signed, short, int));
+  assert(CHAR_BIT*sizeof(long int)  == SIZEOF_BIT(long, int));  assert(CHAR_BIT*sizeof(unsigned long int)  == SIZEOF_BIT(unsigned, long, int));  assert(CHAR_BIT*sizeof(signed long int)  == SIZEOF_BIT(signed, long, int));
+  assert(CHAR_BIT*sizeof(long long int) == SIZEOF_BIT(long, long, int)); assert(CHAR_BIT*sizeof(unsigned long long int) == SIZEOF_BIT(unsigned, long, long, int)); assert(CHAR_BIT*sizeof(signed long long int) == SIZEOF_BIT(signed, long, long, int));
   return ;
 }
 
