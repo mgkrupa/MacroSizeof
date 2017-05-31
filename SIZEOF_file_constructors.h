@@ -100,7 +100,7 @@ static void GetCodeDefiningSIZEOF_and_BITForIntegralGivenCharBit(
       }
       std::string lhs_comparison_str;
       info.lhs_of_comparison_str_generator[i](&info, &lhs_comparison_str);
-      strstrm << lhs_comparison_str  << " == " << val << '\n';
+      strstrm << lhs_comparison_str  << " == " << out_str << '\n';
       GetCodeDefiningSIZEOF_and_BITForIntegralGivenCharBitHelper(strstrm, info,
         num_chars, num_bits);
     }
@@ -151,8 +151,9 @@ static void GetCodeDefiningSIZEOF_and_BIT_for_integral_types(const std::string f
     }
     if (val != nullptr)
       *val = shifted;
-    if (out_str != nullptr)
-      *out_str = std::to_string(shifted);
+    if (out_str != nullptr) {
+      *out_str = std::to_string(shifted) + std::string("u");
+    }
     return true;
   };
 
