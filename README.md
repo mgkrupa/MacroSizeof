@@ -3,36 +3,22 @@
 
 Macros defined only for fundamental (i.e. primitive) types. Should work correctly with many, although possibly NOT all, architectures and compilers. Call VerifySIZEOFMacros<int>(); and/or PrintSizesToCout<int>(); to verify the correctness of these macros for use with your compiler and for your target architecture.
 
-Usage example:
+Usage example:<br />
 
-#include <iostream>
+#include < iostream > 
 
-#include "SIZEOF_definitions.h"
+#include "SIZEOF_definitions.h"<br />
+#if SIZEOF(unsigned, int) == 4<br />
+int func() { return SIZEOF_BIT(unsigned, int); }<br />
+#elif SIZEOF(unsigned, int) == 8<br />
+int func() { return 2 * SIZEOF_BIT(unsigned, int); }<br />
+#endif<br />
 
-#if SIZEOF(unsigned, int) == 4
-
-int func() { return SIZEOF_BIT(unsigned, int); }
-
-#elif SIZEOF(unsigned, int) == 8
-
-int func() { return 2 * SIZEOF_BIT(unsigned, int); }
-
-#endif
-
-int main(int argc, char** argv) {
-
-  std::cout 
-  
-  << SIZEOF(unsigned, long, int) << " chars, #bits = " << SIZEOF_BIT(unsigned, long, int) << '\n'
-  
-  
-  << SIZEOF(unsigned, int)       << " chars, #bits = " << SIZEOF_BIT(unsigned, int)       << '\n'
-         
-         
-  << SIZEOF(int)                 << " chars, #bits = " << SIZEOF_BIT(int)                 << '\n';
-  
-  std::cout << func() << std::endl;
-  
-  return 0;
-  
+int main(int argc, char** argv) {<br />
+  std::cout <br />
+  << SIZEOF(unsigned, long, int) << " chars, #bits = " << SIZEOF_BIT(unsigned, long, int) << '\n'<br />
+  << SIZEOF(unsigned, int)       << " chars, #bits = " << SIZEOF_BIT(unsigned, int)       << '\n'<br />         
+  << SIZEOF(int)                 << " chars, #bits = " << SIZEOF_BIT(int)                 << '\n';<br />
+  std::cout << func() << std::endl;<br />
+  return 0;<br />
 }
