@@ -5,7 +5,7 @@ Macros defined only for fundamental (i.e. primitive) types. Should work correctl
 
 Usage example:<br />
 
-#include < iostream > 
+#include <iostream> 
 
 #include "SIZEOF_definitions.h"<br />
 #if SIZEOF(unsigned, int) == 4<br />
@@ -15,8 +15,7 @@ int func() { return 2 * SIZEOF_BIT(unsigned, int); }<br />
 #endif<br />
 
 int main(int argc, char** argv) {<br />
-  std::cout <br />
-  << SIZEOF(unsigned, long, int) << " chars, #bits = " << SIZEOF_BIT(unsigned, long, int) << '\n'<br />
+  std::cout << SIZEOF(unsigned, long, int) << " chars, #bits = " << SIZEOF_BIT(unsigned, long, int) << '\n'<br />
   << SIZEOF(unsigned, int)       << " chars, #bits = " << SIZEOF_BIT(unsigned, int)       << '\n'<br />         
   << SIZEOF(int)                 << " chars, #bits = " << SIZEOF_BIT(int)                 << '\n';<br />
   std::cout << func() << std::endl;<br />
