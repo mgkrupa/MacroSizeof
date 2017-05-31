@@ -304,121 +304,121 @@ int main(int argc, char** argv) {
 #define SIZEOF_signedlonglongint          12
 #define SIZEOFBITS_signedlonglongint      96
 #endif
-#if     UCHAR_MAX == 255
+#if     UCHAR_MAX == 255u
 #define SIZEOF_UCHAR                      1
 #define UCHAR_BIT                         8
 #define SIZEOF_unsignedchar               1
 #define SIZEOFBITS_unsignedchar           8
-#elif   UCHAR_MAX == 65535
+#elif   UCHAR_MAX == 65535u
 #define SIZEOF_UCHAR                      2
 #define UCHAR_BIT                         16
 #define SIZEOF_unsignedchar               2
 #define SIZEOFBITS_unsignedchar           16
-#elif   UCHAR_MAX == 4294967295
+#elif   UCHAR_MAX == 4294967295u
 #define SIZEOF_UCHAR                      4
 #define UCHAR_BIT                         32
 #define SIZEOF_unsignedchar               4
 #define SIZEOFBITS_unsignedchar           32
-#elif   UCHAR_MAX == 18446744073709551615
+#elif   UCHAR_MAX == 18446744073709551615u
 #define SIZEOF_UCHAR                      8
 #define UCHAR_BIT                         64
 #define SIZEOF_unsignedchar               8
 #define SIZEOFBITS_unsignedchar           64
-#elif   UCHAR_MAX == 18446744073709551615
+#elif   UCHAR_MAX == 18446744073709551615u
 #define SIZEOF_UCHAR                      16
 #define UCHAR_BIT                         128
 #define SIZEOF_unsignedchar               16
 #define SIZEOFBITS_unsignedchar           128
-#elif   UCHAR_MAX == 65535
+#elif   UCHAR_MAX == 65535u
 #define SIZEOF_UCHAR                      10
 #define UCHAR_BIT                         80
 #define SIZEOF_unsignedchar               10
 #define SIZEOFBITS_unsignedchar           80
-#elif   UCHAR_MAX == 4294967295
+#elif   UCHAR_MAX == 4294967295u
 #define SIZEOF_UCHAR                      12
 #define UCHAR_BIT                         96
 #define SIZEOF_unsignedchar               12
 #define SIZEOFBITS_unsignedchar           96
 #endif
-#if     UINT_MAX == 4294967295
+#if     UINT_MAX == 4294967295u
 #define SIZEOF_UINT                       4
 #define UINT_BIT                          32
 #define SIZEOF_unsignedint                4
 #define SIZEOFBITS_unsignedint            32
-#elif   UINT_MAX == 18446744073709551615
+#elif   UINT_MAX == 18446744073709551615u
 #define SIZEOF_UINT                       8
 #define UINT_BIT                          64
 #define SIZEOF_unsignedint                8
 #define SIZEOFBITS_unsignedint            64
-#elif   UINT_MAX == 65535
+#elif   UINT_MAX == 65535u
 #define SIZEOF_UINT                       2
 #define UINT_BIT                          16
 #define SIZEOF_unsignedint                2
 #define SIZEOFBITS_unsignedint            16
-#elif   UINT_MAX == 18446744073709551615
+#elif   UINT_MAX == 18446744073709551615u
 #define SIZEOF_UINT                       16
 #define UINT_BIT                          128
 #define SIZEOF_unsignedint                16
 #define SIZEOFBITS_unsignedint            128
-#elif   UINT_MAX == 255
+#elif   UINT_MAX == 255u
 #define SIZEOF_UINT                       1
 #define UINT_BIT                          8
 #define SIZEOF_unsignedint                1
 #define SIZEOFBITS_unsignedint            8
-#elif   UINT_MAX == 65535
+#elif   UINT_MAX == 65535u
 #define SIZEOF_UINT                       10
 #define UINT_BIT                          80
 #define SIZEOF_unsignedint                10
 #define SIZEOFBITS_unsignedint            80
-#elif   UINT_MAX == 4294967295
+#elif   UINT_MAX == 4294967295u
 #define SIZEOF_UINT                       12
 #define UINT_BIT                          96
 #define SIZEOF_unsignedint                12
 #define SIZEOFBITS_unsignedint            96
 #endif
-#if     USHRT_MAX == 65535
+#if     USHRT_MAX == 65535u
 #define SIZEOF_USHRT                      2
 #define USHRT_BIT                         16
 #define SIZEOF_unsignedshort              2
 #define SIZEOFBITS_unsignedshort          16
 #define SIZEOF_unsignedshortint           2
 #define SIZEOFBITS_unsignedshortint       16
-#elif   USHRT_MAX == 4294967295
+#elif   USHRT_MAX == 4294967295u
 #define SIZEOF_USHRT                      4
 #define USHRT_BIT                         32
 #define SIZEOF_unsignedshort              4
 #define SIZEOFBITS_unsignedshort          32
 #define SIZEOF_unsignedshortint           4
 #define SIZEOFBITS_unsignedshortint       32
-#elif   USHRT_MAX == 18446744073709551615
+#elif   USHRT_MAX == 18446744073709551615u
 #define SIZEOF_USHRT                      8
 #define USHRT_BIT                         64
 #define SIZEOF_unsignedshort              8
 #define SIZEOFBITS_unsignedshort          64
 #define SIZEOF_unsignedshortint           8
 #define SIZEOFBITS_unsignedshortint       64
-#elif   USHRT_MAX == 18446744073709551615
+#elif   USHRT_MAX == 18446744073709551615u
 #define SIZEOF_USHRT                      16
 #define USHRT_BIT                         128
 #define SIZEOF_unsignedshort              16
 #define SIZEOFBITS_unsignedshort          128
 #define SIZEOF_unsignedshortint           16
 #define SIZEOFBITS_unsignedshortint       128
-#elif   USHRT_MAX == 255
+#elif   USHRT_MAX == 255u
 #define SIZEOF_USHRT                      1
 #define USHRT_BIT                         8
 #define SIZEOF_unsignedshort              1
 #define SIZEOFBITS_unsignedshort          8
 #define SIZEOF_unsignedshortint           1
 #define SIZEOFBITS_unsignedshortint       8
-#elif   USHRT_MAX == 65535
+#elif   USHRT_MAX == 65535u
 #define SIZEOF_USHRT                      10
 #define USHRT_BIT                         80
 #define SIZEOF_unsignedshort              10
 #define SIZEOFBITS_unsignedshort          80
 #define SIZEOF_unsignedshortint           10
 #define SIZEOFBITS_unsignedshortint       80
-#elif   USHRT_MAX == 4294967295
+#elif   USHRT_MAX == 4294967295u
 #define SIZEOF_USHRT                      12
 #define USHRT_BIT                         96
 #define SIZEOF_unsignedshort              12
@@ -426,35 +426,35 @@ int main(int argc, char** argv) {
 #define SIZEOF_unsignedshortint           12
 #define SIZEOFBITS_unsignedshortint       96
 #endif
-#if     ULONG_MAX == 18446744073709551615
+#if     ULONG_MAX == 18446744073709551615u
 #define SIZEOF_ULONG                      8
 #define ULONG_BIT                         64
 #define SIZEOF_unsignedlong               8
 #define SIZEOFBITS_unsignedlong           64
 #define SIZEOF_unsignedlongint            8
 #define SIZEOFBITS_unsignedlongint        64
-#elif   ULONG_MAX == 4294967295
+#elif   ULONG_MAX == 4294967295u
 #define SIZEOF_ULONG                      4
 #define ULONG_BIT                         32
 #define SIZEOF_unsignedlong               4
 #define SIZEOFBITS_unsignedlong           32
 #define SIZEOF_unsignedlongint            4
 #define SIZEOFBITS_unsignedlongint        32
-#elif   ULONG_MAX == 18446744073709551615
+#elif   ULONG_MAX == 18446744073709551615u
 #define SIZEOF_ULONG                      16
 #define ULONG_BIT                         128
 #define SIZEOF_unsignedlong               16
 #define SIZEOFBITS_unsignedlong           128
 #define SIZEOF_unsignedlongint            16
 #define SIZEOFBITS_unsignedlongint        128
-#elif   ULONG_MAX == 65535
+#elif   ULONG_MAX == 65535u
 #define SIZEOF_ULONG                      10
 #define ULONG_BIT                         80
 #define SIZEOF_unsignedlong               10
 #define SIZEOFBITS_unsignedlong           80
 #define SIZEOF_unsignedlongint            10
 #define SIZEOFBITS_unsignedlongint        80
-#elif   ULONG_MAX == 4294967295
+#elif   ULONG_MAX == 4294967295u
 #define SIZEOF_ULONG                      12
 #define ULONG_BIT                         96
 #define SIZEOF_unsignedlong               12
@@ -462,35 +462,35 @@ int main(int argc, char** argv) {
 #define SIZEOF_unsignedlongint            12
 #define SIZEOFBITS_unsignedlongint        96
 #endif
-#if     ULLONG_MAX == 18446744073709551615
+#if     ULLONG_MAX == 18446744073709551615u
 #define SIZEOF_ULLONG                     8
 #define ULLONG_BIT                        64
 #define SIZEOF_unsignedlonglong           8
 #define SIZEOFBITS_unsignedlonglong       64
 #define SIZEOF_unsignedlonglongint        8
 #define SIZEOFBITS_unsignedlonglongint    64
-#elif   ULLONG_MAX == 4294967295
+#elif   ULLONG_MAX == 4294967295u
 #define SIZEOF_ULLONG                     4
 #define ULLONG_BIT                        32
 #define SIZEOF_unsignedlonglong           4
 #define SIZEOFBITS_unsignedlonglong       32
 #define SIZEOF_unsignedlonglongint        4
 #define SIZEOFBITS_unsignedlonglongint    32
-#elif   ULLONG_MAX == 18446744073709551615
+#elif   ULLONG_MAX == 18446744073709551615u
 #define SIZEOF_ULLONG                     16
 #define ULLONG_BIT                        128
 #define SIZEOF_unsignedlonglong           16
 #define SIZEOFBITS_unsignedlonglong       128
 #define SIZEOF_unsignedlonglongint        16
 #define SIZEOFBITS_unsignedlonglongint    128
-#elif   ULLONG_MAX == 65535
+#elif   ULLONG_MAX == 65535u
 #define SIZEOF_ULLONG                     10
 #define ULLONG_BIT                        80
 #define SIZEOF_unsignedlonglong           10
 #define SIZEOFBITS_unsignedlonglong       80
 #define SIZEOF_unsignedlonglongint        10
 #define SIZEOFBITS_unsignedlonglongint    80
-#elif   ULLONG_MAX == 4294967295
+#elif   ULLONG_MAX == 4294967295u
 #define SIZEOF_ULLONG                     12
 #define ULLONG_BIT                        96
 #define SIZEOF_unsignedlonglong           12
@@ -603,27 +603,27 @@ int main(int argc, char** argv) {
 #endif
 #endif
 #if     defined(SIZE_MAX)
-#if     SIZE_MAX == 18446744073709551615
+#if     SIZE_MAX == 18446744073709551615u
 #define SIZEOF_SIZE                       8
 #define SIZE_BIT                          64
 #define SIZEOF_size_t                     8
 #define SIZEOFBITS_size_t                 64
-#elif   SIZE_MAX == 4294967295
+#elif   SIZE_MAX == 4294967295u
 #define SIZEOF_SIZE                       4
 #define SIZE_BIT                          32
 #define SIZEOF_size_t                     4
 #define SIZEOFBITS_size_t                 32
-#elif   SIZE_MAX == 18446744073709551615
+#elif   SIZE_MAX == 18446744073709551615u
 #define SIZEOF_SIZE                       16
 #define SIZE_BIT                          128
 #define SIZEOF_size_t                     16
 #define SIZEOFBITS_size_t                 128
-#elif   SIZE_MAX == 65535
+#elif   SIZE_MAX == 65535u
 #define SIZEOF_SIZE                       10
 #define SIZE_BIT                          80
 #define SIZEOF_size_t                     10
 #define SIZEOFBITS_size_t                 80
-#elif   SIZE_MAX == 4294967295
+#elif   SIZE_MAX == 4294967295u
 #define SIZEOF_SIZE                       12
 #define SIZE_BIT                          96
 #define SIZEOF_size_t                     12
@@ -631,27 +631,27 @@ int main(int argc, char** argv) {
 #endif
 #endif
 #if     defined(WINT_MAX)
-#if     WINT_MAX == 18446744073709551615
+#if     WINT_MAX == 18446744073709551615u
 #define SIZEOF_WINT                       8
 #define WINT_BIT                          64
 #define SIZEOF_wint_t                     8
 #define SIZEOFBITS_wint_t                 64
-#elif   WINT_MAX == 4294967295
+#elif   WINT_MAX == 4294967295u
 #define SIZEOF_WINT                       4
 #define WINT_BIT                          32
 #define SIZEOF_wint_t                     4
 #define SIZEOFBITS_wint_t                 32
-#elif   WINT_MAX == 18446744073709551615
+#elif   WINT_MAX == 18446744073709551615u
 #define SIZEOF_WINT                       16
 #define WINT_BIT                          128
 #define SIZEOF_wint_t                     16
 #define SIZEOFBITS_wint_t                 128
-#elif   WINT_MAX == 65535
+#elif   WINT_MAX == 65535u
 #define SIZEOF_WINT                       10
 #define WINT_BIT                          80
 #define SIZEOF_wint_t                     10
 #define SIZEOFBITS_wint_t                 80
-#elif   WINT_MAX == 4294967295
+#elif   WINT_MAX == 4294967295u
 #define SIZEOF_WINT                       12
 #define WINT_BIT                          96
 #define SIZEOF_wint_t                     12
@@ -800,70 +800,70 @@ int main(int argc, char** argv) {
 #define SIZEOF_signedlonglongint          4
 #define SIZEOFBITS_signedlonglongint      64
 #endif
-#if     UCHAR_MAX == 65535
+#if     UCHAR_MAX == 65535u
 #define SIZEOF_UCHAR                      1
 #define UCHAR_BIT                         16
 #define SIZEOF_unsignedchar               1
 #define SIZEOFBITS_unsignedchar           16
-#elif   UCHAR_MAX == 4294967295
+#elif   UCHAR_MAX == 4294967295u
 #define SIZEOF_UCHAR                      2
 #define UCHAR_BIT                         32
 #define SIZEOF_unsignedchar               2
 #define SIZEOFBITS_unsignedchar           32
-#elif   UCHAR_MAX == 18446744073709551615
+#elif   UCHAR_MAX == 18446744073709551615u
 #define SIZEOF_UCHAR                      4
 #define UCHAR_BIT                         64
 #define SIZEOF_unsignedchar               4
 #define SIZEOFBITS_unsignedchar           64
-#elif   UCHAR_MAX == 18446744073709551615
+#elif   UCHAR_MAX == 18446744073709551615u
 #define SIZEOF_UCHAR                      8
 #define UCHAR_BIT                         128
 #define SIZEOF_unsignedchar               8
 #define SIZEOFBITS_unsignedchar           128
 #endif
-#if     UINT_MAX == 18446744073709551615
+#if     UINT_MAX == 18446744073709551615u
 #define SIZEOF_UINT                       4
 #define UINT_BIT                          64
 #define SIZEOF_unsignedint                4
 #define SIZEOFBITS_unsignedint            64
-#elif   UINT_MAX == 18446744073709551615
+#elif   UINT_MAX == 18446744073709551615u
 #define SIZEOF_UINT                       8
 #define UINT_BIT                          128
 #define SIZEOF_unsignedint                8
 #define SIZEOFBITS_unsignedint            128
-#elif   UINT_MAX == 4294967295
+#elif   UINT_MAX == 4294967295u
 #define SIZEOF_UINT                       2
 #define UINT_BIT                          32
 #define SIZEOF_unsignedint                2
 #define SIZEOFBITS_unsignedint            32
-#elif   UINT_MAX == 65535
+#elif   UINT_MAX == 65535u
 #define SIZEOF_UINT                       1
 #define UINT_BIT                          16
 #define SIZEOF_unsignedint                1
 #define SIZEOFBITS_unsignedint            16
 #endif
-#if     USHRT_MAX == 4294967295
+#if     USHRT_MAX == 4294967295u
 #define SIZEOF_USHRT                      2
 #define USHRT_BIT                         32
 #define SIZEOF_unsignedshort              2
 #define SIZEOFBITS_unsignedshort          32
 #define SIZEOF_unsignedshortint           2
 #define SIZEOFBITS_unsignedshortint       32
-#elif   USHRT_MAX == 18446744073709551615
+#elif   USHRT_MAX == 18446744073709551615u
 #define SIZEOF_USHRT                      4
 #define USHRT_BIT                         64
 #define SIZEOF_unsignedshort              4
 #define SIZEOFBITS_unsignedshort          64
 #define SIZEOF_unsignedshortint           4
 #define SIZEOFBITS_unsignedshortint       64
-#elif   USHRT_MAX == 18446744073709551615
+#elif   USHRT_MAX == 18446744073709551615u
 #define SIZEOF_USHRT                      8
 #define USHRT_BIT                         128
 #define SIZEOF_unsignedshort              8
 #define SIZEOFBITS_unsignedshort          128
 #define SIZEOF_unsignedshortint           8
 #define SIZEOFBITS_unsignedshortint       128
-#elif   USHRT_MAX == 65535
+#elif   USHRT_MAX == 65535u
 #define SIZEOF_USHRT                      1
 #define USHRT_BIT                         16
 #define SIZEOF_unsignedshort              1
@@ -871,14 +871,14 @@ int main(int argc, char** argv) {
 #define SIZEOF_unsignedshortint           1
 #define SIZEOFBITS_unsignedshortint       16
 #endif
-#if     ULONG_MAX == 18446744073709551615
+#if     ULONG_MAX == 18446744073709551615u
 #define SIZEOF_ULONG                      8
 #define ULONG_BIT                         128
 #define SIZEOF_unsignedlong               8
 #define SIZEOFBITS_unsignedlong           128
 #define SIZEOF_unsignedlongint            8
 #define SIZEOFBITS_unsignedlongint        128
-#elif   ULONG_MAX == 18446744073709551615
+#elif   ULONG_MAX == 18446744073709551615u
 #define SIZEOF_ULONG                      4
 #define ULONG_BIT                         64
 #define SIZEOF_unsignedlong               4
@@ -886,14 +886,14 @@ int main(int argc, char** argv) {
 #define SIZEOF_unsignedlongint            4
 #define SIZEOFBITS_unsignedlongint        64
 #endif
-#if     ULLONG_MAX == 18446744073709551615
+#if     ULLONG_MAX == 18446744073709551615u
 #define SIZEOF_ULLONG                     8
 #define ULLONG_BIT                        128
 #define SIZEOF_unsignedlonglong           8
 #define SIZEOFBITS_unsignedlonglong       128
 #define SIZEOF_unsignedlonglongint        8
 #define SIZEOFBITS_unsignedlonglongint    128
-#elif   ULLONG_MAX == 18446744073709551615
+#elif   ULLONG_MAX == 18446744073709551615u
 #define SIZEOF_ULLONG                     4
 #define ULLONG_BIT                        64
 #define SIZEOF_unsignedlonglong           4
@@ -961,12 +961,12 @@ int main(int argc, char** argv) {
 #endif
 #endif
 #if     defined(SIZE_MAX)
-#if     SIZE_MAX == 18446744073709551615
+#if     SIZE_MAX == 18446744073709551615u
 #define SIZEOF_SIZE                       8
 #define SIZE_BIT                          128
 #define SIZEOF_size_t                     8
 #define SIZEOFBITS_size_t                 128
-#elif   SIZE_MAX == 18446744073709551615
+#elif   SIZE_MAX == 18446744073709551615u
 #define SIZEOF_SIZE                       4
 #define SIZE_BIT                          64
 #define SIZEOF_size_t                     4
@@ -974,12 +974,12 @@ int main(int argc, char** argv) {
 #endif
 #endif
 #if     defined(WINT_MAX)
-#if     WINT_MAX == 18446744073709551615
+#if     WINT_MAX == 18446744073709551615u
 #define SIZEOF_WINT                       8
 #define WINT_BIT                          128
 #define SIZEOF_wint_t                     8
 #define SIZEOFBITS_wint_t                 128
-#elif   WINT_MAX == 18446744073709551615
+#elif   WINT_MAX == 18446744073709551615u
 #define SIZEOF_WINT                       4
 #define WINT_BIT                          64
 #define SIZEOF_wint_t                     4
@@ -1083,53 +1083,53 @@ int main(int argc, char** argv) {
 #define SIZEOF_signedlonglongint          4
 #define SIZEOFBITS_signedlonglongint      128
 #endif
-#if     UCHAR_MAX == 4294967295
+#if     UCHAR_MAX == 4294967295u
 #define SIZEOF_UCHAR                      1
 #define UCHAR_BIT                         32
 #define SIZEOF_unsignedchar               1
 #define SIZEOFBITS_unsignedchar           32
-#elif   UCHAR_MAX == 18446744073709551615
+#elif   UCHAR_MAX == 18446744073709551615u
 #define SIZEOF_UCHAR                      2
 #define UCHAR_BIT                         64
 #define SIZEOF_unsignedchar               2
 #define SIZEOFBITS_unsignedchar           64
-#elif   UCHAR_MAX == 18446744073709551615
+#elif   UCHAR_MAX == 18446744073709551615u
 #define SIZEOF_UCHAR                      4
 #define UCHAR_BIT                         128
 #define SIZEOF_unsignedchar               4
 #define SIZEOFBITS_unsignedchar           128
 #endif
-#if     UINT_MAX == 18446744073709551615
+#if     UINT_MAX == 18446744073709551615u
 #define SIZEOF_UINT                       4
 #define UINT_BIT                          128
 #define SIZEOF_unsignedint                4
 #define SIZEOFBITS_unsignedint            128
-#elif   UINT_MAX == 18446744073709551615
+#elif   UINT_MAX == 18446744073709551615u
 #define SIZEOF_UINT                       2
 #define UINT_BIT                          64
 #define SIZEOF_unsignedint                2
 #define SIZEOFBITS_unsignedint            64
-#elif   UINT_MAX == 4294967295
+#elif   UINT_MAX == 4294967295u
 #define SIZEOF_UINT                       1
 #define UINT_BIT                          32
 #define SIZEOF_unsignedint                1
 #define SIZEOFBITS_unsignedint            32
 #endif
-#if     USHRT_MAX == 18446744073709551615
+#if     USHRT_MAX == 18446744073709551615u
 #define SIZEOF_USHRT                      2
 #define USHRT_BIT                         64
 #define SIZEOF_unsignedshort              2
 #define SIZEOFBITS_unsignedshort          64
 #define SIZEOF_unsignedshortint           2
 #define SIZEOFBITS_unsignedshortint       64
-#elif   USHRT_MAX == 18446744073709551615
+#elif   USHRT_MAX == 18446744073709551615u
 #define SIZEOF_USHRT                      4
 #define USHRT_BIT                         128
 #define SIZEOF_unsignedshort              4
 #define SIZEOFBITS_unsignedshort          128
 #define SIZEOF_unsignedshortint           4
 #define SIZEOFBITS_unsignedshortint       128
-#elif   USHRT_MAX == 4294967295
+#elif   USHRT_MAX == 4294967295u
 #define SIZEOF_USHRT                      1
 #define USHRT_BIT                         32
 #define SIZEOF_unsignedshort              1
@@ -1137,7 +1137,7 @@ int main(int argc, char** argv) {
 #define SIZEOF_unsignedshortint           1
 #define SIZEOFBITS_unsignedshortint       32
 #endif
-#if     ULONG_MAX == 18446744073709551615
+#if     ULONG_MAX == 18446744073709551615u
 #define SIZEOF_ULONG                      4
 #define ULONG_BIT                         128
 #define SIZEOF_unsignedlong               4
@@ -1145,7 +1145,7 @@ int main(int argc, char** argv) {
 #define SIZEOF_unsignedlongint            4
 #define SIZEOFBITS_unsignedlongint        128
 #endif
-#if     ULLONG_MAX == 18446744073709551615
+#if     ULLONG_MAX == 18446744073709551615u
 #define SIZEOF_ULLONG                     4
 #define ULLONG_BIT                        128
 #define SIZEOF_unsignedlonglong           4
@@ -1198,7 +1198,7 @@ int main(int argc, char** argv) {
 #endif
 #endif
 #if     defined(SIZE_MAX)
-#if     SIZE_MAX == 18446744073709551615
+#if     SIZE_MAX == 18446744073709551615u
 #define SIZEOF_SIZE                       4
 #define SIZE_BIT                          128
 #define SIZEOF_size_t                     4
@@ -1206,7 +1206,7 @@ int main(int argc, char** argv) {
 #endif
 #endif
 #if     defined(WINT_MAX)
-#if     WINT_MAX == 18446744073709551615
+#if     WINT_MAX == 18446744073709551615u
 #define SIZEOF_WINT                       4
 #define WINT_BIT                          128
 #define SIZEOF_wint_t                     4
@@ -1263,36 +1263,36 @@ int main(int argc, char** argv) {
 #define SIZEOF_signedshortint             1
 #define SIZEOFBITS_signedshortint         64
 #endif
-#if     UCHAR_MAX == 18446744073709551615
+#if     UCHAR_MAX == 18446744073709551615u
 #define SIZEOF_UCHAR                      1
 #define UCHAR_BIT                         64
 #define SIZEOF_unsignedchar               1
 #define SIZEOFBITS_unsignedchar           64
-#elif   UCHAR_MAX == 18446744073709551615
+#elif   UCHAR_MAX == 18446744073709551615u
 #define SIZEOF_UCHAR                      2
 #define UCHAR_BIT                         128
 #define SIZEOF_unsignedchar               2
 #define SIZEOFBITS_unsignedchar           128
 #endif
-#if     UINT_MAX == 18446744073709551615
+#if     UINT_MAX == 18446744073709551615u
 #define SIZEOF_UINT                       2
 #define UINT_BIT                          128
 #define SIZEOF_unsignedint                2
 #define SIZEOFBITS_unsignedint            128
-#elif   UINT_MAX == 18446744073709551615
+#elif   UINT_MAX == 18446744073709551615u
 #define SIZEOF_UINT                       1
 #define UINT_BIT                          64
 #define SIZEOF_unsignedint                1
 #define SIZEOFBITS_unsignedint            64
 #endif
-#if     USHRT_MAX == 18446744073709551615
+#if     USHRT_MAX == 18446744073709551615u
 #define SIZEOF_USHRT                      2
 #define USHRT_BIT                         128
 #define SIZEOF_unsignedshort              2
 #define SIZEOFBITS_unsignedshort          128
 #define SIZEOF_unsignedshortint           2
 #define SIZEOFBITS_unsignedshortint       128
-#elif   USHRT_MAX == 18446744073709551615
+#elif   USHRT_MAX == 18446744073709551615u
 #define SIZEOF_USHRT                      1
 #define USHRT_BIT                         64
 #define SIZEOF_unsignedshort              1
