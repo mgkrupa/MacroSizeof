@@ -1,4 +1,4 @@
-/* Author: Matthew Gregory Krupa*/
+/* Author: Matthew Gregory Krupa */
 /* Usage example:
 #include <iostream>
 #include "SIZEOF_definitions.h"
