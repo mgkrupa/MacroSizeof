@@ -171,7 +171,7 @@ static void GetCodeDefiningSIZEOF_and_BIT_for_integral_types(const std::string f
   };
 
   unsigned int min_num_bits = 8;
-  unsigned int max_num_bits = 128;
+  unsigned int max_num_bits = 64;
 
   bool print_to_cout = false;
   bool was_if_printed = false;
