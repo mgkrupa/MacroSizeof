@@ -10,7 +10,7 @@ int func() { return 2 * SIZEOF_BIT(unsigned, int); }
 #endif
 
 int main(int argc, char** argv) {
-  std::cout SIZEOF(unsigned, long, int) << " chars, #bits = " << SIZEOF_BIT(unsigned, long, int) << '\n'
+  std::cout << SIZEOF(unsigned, long, int) << " chars, #bits = " << SIZEOF_BIT(unsigned, long, int) << '\n'
          << SIZEOF(unsigned, int)       << " chars, #bits = " << SIZEOF_BIT(unsigned, int)       << '\n'
          << SIZEOF(int)                 << " chars, #bits = " << SIZEOF_BIT(int)                 << '\n';
   std::cout << func() << std::endl;
