@@ -1,7 +1,7 @@
 /* Author: Matthew Gregory Krupa */
 /* Usage example:
-#include <iostream>
 #include "SIZEOF_definitions.h"
+#include <iostream>
 
 //This would not work correctly if sizeof(unsigned int) was used in place of SIZEOF(unsigned, int).
 #if SIZEOF(unsigned, int) == 4
