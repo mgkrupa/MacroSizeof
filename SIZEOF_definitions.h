@@ -1,4 +1,6 @@
-/* Author: Matthew Gregory Krupa */
+/* Author: Matthew Gregory Krupa 
+ * This file was constructed using the functions in SIZEOF_file_constructors.h
+ */
 /* Usage example:
 #include "SIZEOF_definitions.h"
 #include <iostream>
