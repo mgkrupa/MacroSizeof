@@ -2,11 +2,14 @@
 /* Usage example:
 #include <iostream>
 #include "SIZEOF_definitions.h"
+
+//This would not compile if sizeof(unsigned int) was used inplace of SIZEOF(unsigned, int).
 #if SIZEOF(unsigned, int) == 4
 int func() { return SIZEOF_BIT(unsigned, int); }
 #elif SIZEOF(unsigned, int) == 8
 int func() { return 2 * SIZEOF_BIT(unsigned, int); }
 #endif
+
 int main(int argc, char** argv) {
   std::cout << SIZEOF(unsigned, long, int) << " chars, #bits = " << SIZEOF_BIT(unsigned, long, int) << '\n'
          << SIZEOF(unsigned, int)       << " chars, #bits = " << SIZEOF_BIT(unsigned, int)       << '\n'
