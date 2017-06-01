@@ -8,6 +8,8 @@ Usage example:<br />
 #include < iostream> 
 
 #include "SIZEOF_definitions.h" <br />
+
+//This would not work correctly if sizeof(unsigned int) was used in place of SIZEOF(unsigned, int). <br />
 #if SIZEOF(unsigned, int) == 4 <br />
 int func() { return SIZEOF_BIT(unsigned, int); } <br />
 #elif SIZEOF(unsigned, int) == 8 <br />
