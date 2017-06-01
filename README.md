@@ -5,9 +5,8 @@ Macros defined only for fundamental (i.e. primitive) types. Should work correctl
 
 Usage example:<br />
 
-#include < iostream> 
-
 #include "SIZEOF_definitions.h" <br />
+#include < iostream> 
 
 //This would not work correctly if sizeof(unsigned int) was used in place of SIZEOF(unsigned, int). <br />
 #if SIZEOF(unsigned, int) == 4 <br />
