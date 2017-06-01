@@ -3,7 +3,7 @@
 #include <iostream>
 #include "SIZEOF_definitions.h"
 
-//This would not compile if sizeof(unsigned int) was used inplace of SIZEOF(unsigned, int).
+//This would not compile if sizeof(unsigned int) was used in place of SIZEOF(unsigned, int).
 #if SIZEOF(unsigned, int) == 4
 int func() { return SIZEOF_BIT(unsigned, int); }
 #elif SIZEOF(unsigned, int) == 8
